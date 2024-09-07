@@ -1,1 +1,84 @@
-.
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artes Digitais</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #666;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Artes Digitais</h1>
+    </header>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Galeria</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </nav>
+    <div class="container">
+        <section class="gallery">
+            <img src="exemplo1.jpg" alt="Arte Digital 1">
+            <img src="exemplo2.jpg" alt="Arte Digital 2">
+            <img src="exemplo3.jpg" alt="Arte Digital 3">
+            <img src="exemplo4.jpg" alt="Arte Digital 4">
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Artes Digitais. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
